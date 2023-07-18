@@ -1,0 +1,31 @@
+import java.util.*;
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner  sc=new Scanner(System.in);
+	int num=sc.nextInt();
+	boolean res=calculate(num);
+	if(res)
+	{
+	    System.out.println("true");
+	}
+	else
+	{
+	    System.out.println("false");
+	}
+	}
+	public static boolean calculate(int num)
+	{
+	double square=Math.sqrt(num);
+	if(square-Math.floor(square)==0)
+	{
+	 return true;  
+	}
+	else{
+	 return false;   
+	}
+	}
+	
+}
